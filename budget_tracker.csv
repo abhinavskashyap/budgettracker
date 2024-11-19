@@ -1,0 +1,16 @@
+id,item,account,vendor,quantity,group,amount,currency,date,EUR
+1,rice,food,coles,1,e,-5,AUD,19/10/2023,-3.04
+2,wheat,food,coles,1,e,-4,AUD,19/10/2023,-2.43
+3,apple,food,wooly,2,e,-6,AUD,11/9/2023,-3.65
+4,mango,food,wooly,2,e,-7,AUD,11/9/2023,-4.26
+5,jeans,clothes,levis,1,e,-20,AUD,20/10/2024,-12.17
+6,shirt,clothes,levis,1,e,-10,AUD,20/10/2024,-6.09
+7,jeans,clothes,ck,1,e,-30,AUD,20/11/2024,-18.26
+8,shirt,clothes,ck,1,e,-20,AUD,20/11/2024,-12.17
+9,salary,income,salary,1,i,2000,USD,10/8/2024,1849.02
+10,vitamins,meds,coles,10,e,-10,EUR,15/6/2022,-10
+11,cake,food,wooly,1,e,-10,EUR,23/10/2024,-10
+12,beer,food,wooly,4,e,-8,EUR,12/10/2024,-8
+13,wine,food,coles,1,e,-30,USD,13/9/2024,-27.74
+14,tea,food,coles,1,e,-2000,JPY,19/10/2024,-12.09
+15,coffee,food,coles,1,e,-10,AUD,20/10/2024,-6.09

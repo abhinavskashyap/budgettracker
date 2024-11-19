@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item list</title>
+    <style>
+    table, th, td {border: 1px solid black;border-collapse: collapse;}
+    tr:nth-child(even) {background-color: #D6EEEE;}
+    </style>
+</head>
+</head>
+<body>
+
+    <h1>These are all the budget items. Click an item id to see more details.</h1>
+        {% block content %}
+            <table id="data" class="table table-striped" style="width:50%">
+                <thead>
+                    <tr>
+                    <th>id</th>
+                    <th>item</th>
+                    <th>quantity</th>
+                    <th>amount</th>
+                    <th>date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for x in budget %}
+                    <tr>
+                    <td><a href = ./{{x.id}}>{{x.id}}</a></td>
+                    <td>{{x.item}}</td>
+                    <td>{{x.quantity}}</td>
+                    <td>{{x.amount}}</td>
+                    <td>{{x.date}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endblock %}
+
+    <a href = ./create> Click here to create a new item.</a>
+    <h2><p>Random dog fact</p></h2>
+    <p>{{fact}}</p>
+<h2><p>Random dog image</p></h2>
+<img src = 'https://place.dog/300/200'>
+</body>
+</html>

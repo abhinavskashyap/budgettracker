@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item details</title>
+    <style>
+    table, th, td {border: 1px solid black;border-collapse: collapse;}
+    </style>
+</head>
+<body>
+    <h1>Here is the item details.</h1>
+        {% block content %}
+            <table id="data" class="table table-striped" style="width:50%">
+                <thead>
+                    <tr>
+                    <th>item</th>
+                    <th>account</th>
+                    <th>vendor</th>
+                    <th>quantity</th>
+                    <th>group</th>
+                    <th>amount</th>
+                    <th>currency</th>
+                    <th>date</th>
+                    <th>EUR equivalent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for y in budget %}
+                    <tr>
+                    <td>{{y.item}}</td>
+                    <td>{{y.account}}</td>
+                    <td>{{y.vendor}}</td>
+                    <td>{{y.quantity}}</td>
+                    <td>{{y.group}}</td>
+                    <td>{{y.amount}}</td>
+                    <td>{{y.currency}}</td>
+                    <td>{{y.date}}</td>
+                    <td>{{y.EUR}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        {% endblock %}
+    <a href = ./> Click here to return to all items.</a>
+</body>
+</html>
